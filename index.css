@@ -1,0 +1,249 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    height: 5vh;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.navbar .icons a {
+    margin-left: 20px;
+    font-size: 20px;
+    color: #333;
+    text-decoration: none;
+    padding: 4px;
+}
+
+
+.navbar .icons a:hover {
+    color: #0056b3;
+}
+
+.background-image{
+    background-image: url("https://res.cloudinary.com/dlzwthlsb/image/upload/v1721877493/img1_ltmonz.jpg");
+    height: 92vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-card {
+    background-color: #db6464;
+    opacity: 0.7;
+    max-width: 600px;
+    margin-left: 20vh;
+    padding: 20px;
+}
+.text-card h1 {
+    font-size: 32px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+}
+
+.text-card p {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    font-weight: 100;
+}
+
+.order-container{
+    background: linear-gradient(to right, #FF66B2, #FFD966);
+    /* height: 100vh; */
+    padding: 0px;
+    margin: 0px;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 60px;
+}
+
+.card-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+}
+
+.order-card {
+    background-color: #ffffff;
+    border-top-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+    width: 210px;
+    height: 320px;
+    padding: 18px;
+    text-align: center;
+    margin-right: 60px;
+}
+
+.order-card img {
+    width: 210px;
+    height: 210px;
+    border-top-right-radius: 60px;
+}
+
+.order-card h1 {
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.heading {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 32px;
+    letter-spacing: 10px;
+    margin-top: 50px;
+    color: #ffffff;
+    font-weight: 900;
+    margin-bottom: 60px;
+}
+
+.btn{
+    border: 0px;
+    background-color: lightgrey;
+    width: 120px;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 8px;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #f9f9f9;
+}
+
+@media screen and (max-width: 768px) {
+    .text-card {
+        max-width: 500px;
+        margin-left: 40px;
+    }
+
+    .card-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0px;
+    }
+
+    .order-card {
+        margin-right: 20px;
+        width: 180px;
+    }
+
+    .order-card img {
+        width: 180px;
+    }
+
+}
+
+.mobile-view {
+    display: none;
+}
+
+
+@media screen and (max-width: 426px) {
+    .desktop-view {
+        display: none;
+    }
+    .mobile-view {
+        display: block;
+    }
+    .text-card {
+        max-width: 250px;
+        margin-left: 20px;
+    }
+    .order-container{
+        background-image: linear-gradient(to bottom, #FF66B2, #FFD966);
+        background-size: auto;
+        padding: 20px;
+    }
+    
+    .card-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0px;
+    }
+
+    .order-card {
+        margin-right: 0px;
+        margin-bottom: 20px;
+        width: 180px;
+    }
+
+    .order-card img {
+        width: 180px;
+    }
+    .options-container{
+        outline: none;
+        cursor: pointer;
+        padding: 5px;
+    }
+}
+
+
+.fade-in-text {
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+  
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-o-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }

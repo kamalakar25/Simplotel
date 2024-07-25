@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta charset for character encoding -->
+    <meta charset="UTF-8">
+    <!-- Viewport meta tag for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to external stylesheet for styling the page -->
+    <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+    <!-- Navigation bar containing mobile and desktop views -->
+    <nav class="navbar">
+        <!-- Mobile view of the navigation bar with a dropdown menu -->
+        <div class="mobile-view">
+            <select class="options-container">
+                <!-- Dropdown options for navigation -->
+                <option>Home</option>
+                <option>Order</option>
+                <option>Food</option>
+                <option>Restaurant</option>
+                <option>Testimonials</option>
+                <option>Contact Us</option>
+            </select>
+        </div>
+        <!-- Desktop view of the navigation bar with a list of links -->
+        <div class="desktop-view">
+            <ul>
+                <!-- Navigation links -->
+                <li><a href="#home">Home</a></li>
+                <li><a href="#order">Order</a></li>
+                <li><a href="#food">Food</a></li>
+                <li><a href="#restaurant">Restaurant</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- Icons for phone and cart -->
+        <div class="icons">
+            <a href="#phone"><i class="fa fa-phone"></i></a>
+            <a href="#cart"><i class="fa fa-shopping-cart"></i></a>
+        </div>
+    </nav>
+    <!-- Background image section with overlay text -->
+    <div class="background-image">
+       <div class="text-card">
+        <!-- Main heading and description text -->
+        <h1>LOREM IPSUM</h1>
+        <p>
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+        </p>
+       </div>
+    </div>
+
+    <!-- Order section with a heading and a list of order cards -->
+    <div class="order-container">
+        <h1 class="heading">Order Now</h1>
+        <div class="card-container fade-in-text">
+            <!-- Individual order cards -->
+            <div class="order-card">
+                <img src="https://res.cloudinary.com/dlzwthlsb/image/upload/v1721877492/img4_xwjdib.jpg" alt="Burger" />
+                <h1>BURGER</h1>
+                <p>Lorem Ipsum has been the industry's standard dummy text</p>
+            </div>
+            <div class="order-card">
+                <img src="https://res.cloudinary.com/dlzwthlsb/image/upload/v1721886588/img2_eacp1y.jpg" alt="Pizza" />
+                <h1>PIZZA</h1>
+                <p>Lorem Ipsum has been the industry's standard dummy text</p>
+            </div>
+            <div class="order-card">
+                <img src="https://res.cloudinary.com/dlzwthlsb/image/upload/v1721886397/img3_jfc63q.jpg" alt="Pasta" />
+                <h1>PASTA</h1>
+                <p>Lorem Ipsum has been the industry's standard dummy text</p>
+            </div>
+        </div>
+        <!-- Button for placing an order -->
+        <button type="button" class="btn">Order</button>
+    </div>
+
+    <!-- Font Awesome script for icons -->
+    <script src="https://kit.fontawesome.com/61843ab9a3.js" crossorigin="anonymous"></script>
+</body>
+</html>
